@@ -1,0 +1,26 @@
+body {
+  background: #0e1013;
+}
+h1 {
+  max-width: 480px;
+  text-align: center;
+  margin: 60px auto;
+  font-family: 'Courier New', Courier, monospace;
+  color: #fff;
+}
+
+h1::after {
+  content: '|';
+  margin-left: 5px;
+  opacity: 1;
+  animation: blink-bar .7s infinite;
+}
+
+@keyframes blink-bar {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
